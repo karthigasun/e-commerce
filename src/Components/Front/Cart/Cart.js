@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react";
 
 function Cart(props) {
-  console.log(props.addCart , "propsvalue");
+  console.log("props", props.addCart);
+  var data = props.addCart;
   return (
-    <div>
-      <div>h1
-        {props.name}
-      </div>
+    <div key={props.addCart.id}>
+      {data.map((item) => {
+        <div>
+          <h1>{item.price}</h1>
+        </div>
+      })}
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;

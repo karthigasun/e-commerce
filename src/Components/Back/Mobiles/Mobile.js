@@ -4,23 +4,24 @@ import{useState,useEffect} from 'react'
 import Cart from '../../Front/Cart/Cart';
 function Mobile() {
     const[mobile,setMobile]=useState([]);
-    console.log(mobile);
+    //console.log(mobile);
     useEffect(()=>{
-        fetch('./Datas.json')
+        fetch('Datas.json')
         .then(res=>res.json())
         .then(res=>setMobile(res));
     // console.log(setMobile);
 
         
     },[]);
-const [addCart,setAddCart]=useState({name:"karthi"});
+const [addCart,setAddCart]=useState([]);
+console.log("addcart",addCart);
 const addCartValue = (ele) =>{
 
     // if(ele.id!==addCart.id){
     //     // cart.push(cart.id);
     //     // console.log(cart.id , "add");
     //     // console.log(setCart);
-        setAddCart([...addCart,...[ele]])
+        setAddCart([...addCart,ele])
         //console.log(addCart , "add")
     // }
     // else{

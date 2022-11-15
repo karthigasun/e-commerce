@@ -7,7 +7,7 @@ function Lap() {
     const[lap,setLap]=useState([]);
     // console.log(lap);
     useEffect(()=>{
-        fetch('./Datas.json')
+        fetch('Datas.json')
         .then(res=>res.json())
         .then(res=>setLap(res));
         
