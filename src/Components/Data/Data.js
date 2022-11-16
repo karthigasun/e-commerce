@@ -3,7 +3,7 @@ const Datas = {
     {
       id: 1,
       name: "redmi",
-      price: 2000,
+      "price": 2000,
       image: "https://m.media-amazon.com/images/I/71X6mnUDSzL._SL1500_.jpg"
     },
     {

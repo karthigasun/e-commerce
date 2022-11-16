@@ -3,6 +3,7 @@ import './Header.css';
 import {Link} from 'react-router-dom'
 import {FaBars,FaTimes,FaShoppingCart} from 'react-icons/fa';
 import { useState } from 'react';
+// import {useSelector} from 'react-redux'
 
 function Navbar() {
     const[icon,setIcon]=useState(false);
@@ -12,6 +13,7 @@ function Navbar() {
     const closeSide=()=>{
         setIcon(false);
     }
+    // const {totalcount}=useSelector((state)=>state.cart)
   return (
     <>
         <div className='section'>

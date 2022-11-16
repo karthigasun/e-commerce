@@ -1,15 +1,7 @@
-import React, { useState ,useEffect} from 'react'
+import React from 'react';
 import Datas from '../../Data/Data';
 
 function Tv() {
-  const [tv,setTv]=useState([]);
-  // console.log(tv);
-  useEffect(()=>{
-    fetch('Datas.json')
-    .then(res=>res.json())
-    .then(res=>setTv(res))
-  })
-
   return (
     <>
     <div id='section'>

@@ -1,19 +1,8 @@
 import React from 'react'
-import {useState,useEffect} from "react";
 import Datas from '../../Data/Data';
 import './Lap.css'
 
 function Lap() {
-    const[lap,setLap]=useState([]);
-    // console.log(lap);
-    useEffect(()=>{
-        fetch('Datas.json')
-        .then(res=>res.json())
-        .then(res=>setLap(res));
-        
-    },[]);
-
-
   return (
     <>
     <div id='section'>

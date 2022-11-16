@@ -1,36 +1,14 @@
 import React from 'react'
 import Datas from '../../Data/Data';
-import{useState,useEffect} from 'react'
+import{useState} from 'react'
 import Cart from '../../Front/Cart/Cart';
 function Mobile() {
-    const[mobile,setMobile]=useState([]);
-    //console.log(mobile);
-    useEffect(()=>{
-        fetch('Datas.json')
-        .then(res=>res.json())
-        .then(res=>setMobile(res));
-    // console.log(setMobile);
-
-        
-    },[]);
 const [addCart,setAddCart]=useState([]);
 console.log("addcart",addCart);
 const addCartValue = (ele) =>{
-
-    // if(ele.id!==addCart.id){
-    //     // cart.push(cart.id);
-    //     // console.log(cart.id , "add");
-    //     // console.log(setCart);
         setAddCart([...addCart,ele])
-        //console.log(addCart , "add")
-    // }
-    // else{
-    //     return (ele);
-    // }
     // console.log(ele , "add");
 }
-
-
 
   return (
     <>

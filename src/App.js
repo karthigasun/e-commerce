@@ -9,7 +9,6 @@ import {Routes,Route} from 'react-router-dom'
 import All from './Components/Front/All'
 
 function App() {
-
   return (
     <div>
       <Header/>
