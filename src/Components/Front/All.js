@@ -7,8 +7,8 @@ function All() {
   return (
     <>
         <Mobile/>
-        <Lap/>
-        <Tv/>
+        {/* <Lap/> */}
+        {/* <Tv/> */}
     </>
   )
 }
