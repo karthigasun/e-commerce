@@ -5,12 +5,6 @@ import Cart from '../../Front/Cart/Cart';
 import { useDispatch, useSelector } from 'react-redux';
 import { update } from '../../Redux/Action';
 function Mobile() {
-// const [addCart,setAddCart]=useState([]);
-// console.log("addcart",addCart);
-// const addCartValue = (ele) =>{
-//         setAddCart([...addCart,ele])
-//     // console.log(ele , "add");
-// }
 const state=useSelector((state)=>state);
 const dispatch=useDispatch()
 console.log(state);
@@ -35,8 +29,7 @@ const addCart=(item)=>{
                                     <h5 className='card-text'>Price Rs:{laptop.price}</h5>
                                     <button onClick={()=>addCart(laptop)}>Add to Cart</button>
                                 </div>
-                            </div>
-                            
+                            </div> 
                         </div>
                     )
                 })

@@ -10,16 +10,18 @@ function Cart() {
         <div className="row">
       {state.user.map((item)=>{
         return(
-
-          <div key={item.id} className="col-lg-12">
-              <div className="cart-item d-flex justify-content-between">
-              <div className="imge">
-                <img src={item.image} className="img-fluid"/>
-              </div>
-              <div>{item.name}</div>
-              <div>{item.price}</div>
-              </div>
-          </div>
+            <div className='col-12 d-flex' key={item.id}>
+                            <div className='d-flex justify-content-between'>
+                                <div className="card text-center-mb-5">
+                                <img src={item.image} alt={item.name} className='img-fluid'/>
+                                </div>
+                                <div className='card-body'>
+                                    <h4 className='card-title'>Name:{item.name}</h4>
+                                    <h5 className='card-text'>Price Rs:{item.price}</h5>
+                                    {/* <button onClick={()=>addCart(laptop)}>Add to Cart</button> */}
+                                </div>
+                            </div> 
+                        </div>
         )
       })}
     </div>
