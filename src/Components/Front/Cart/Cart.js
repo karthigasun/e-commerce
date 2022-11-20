@@ -7,19 +7,18 @@ function Cart() {
     <>
     <div className="section">
       <div className="container">
-        <div className="row">
+        <div className="row jusitify-content-center">
       {state.user.map((item)=>{
         return(
-            <div className='col-12 d-flex' key={item.id}>
-                            <div className='d-flex justify-content-between'>
-                                <div className="card text-center-mb-5">
-                                <img src={item.image} alt={item.name} className='img-fluid'/>
+            <div className='col-lg-9' key={item.id}>
+                            <div className='single-item d-flex justify-content-between'>
+                                <div>
+                                  <img src={item.image} className="img-fluid" alt={item.name}/>
+                                  <h4>{item.name}</h4>
+                                  <h4>{item.price}</h4>
                                 </div>
-                                <div className='card-body'>
-                                    <h4 className='card-title'>Name:{item.name}</h4>
-                                    <h5 className='card-text'>Price Rs:{item.price}</h5>
-                                    {/* <button onClick={()=>addCart(laptop)}>Add to Cart</button> */}
-                                </div>
+                                <div><input type="number" min="1"/></div>
+                                <div></div>
                             </div> 
                         </div>
         )
