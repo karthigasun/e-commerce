@@ -1,7 +1,7 @@
 import React from 'react'
 import Datas from '../../Data/Data';
-import{useState} from 'react'
-import Cart from '../../Front/Cart/Cart';
+// import{useState} from 'react'
+// import Cart from '../../Front/Cart/Cart';
 import { useDispatch, useSelector } from 'react-redux';
 import { update } from '../../Redux/Action';
 function Mobile() {

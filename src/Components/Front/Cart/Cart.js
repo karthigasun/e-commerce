@@ -7,10 +7,10 @@ function Cart() {
     <>
     <div className="section">
       <div className="container">
-        <div className="row jusitify-content-center">
+        <div className="row">
       {state.user.map((item)=>{
         return(
-            <div className='col-lg-9' key={item.id}>
+            <div className='col-12' key={item.id}>
                             <div className='single-item d-flex justify-content-between'>
                                 <div>
                                   <img src={item.image} className="img-fluid" alt={item.name}/>
@@ -18,7 +18,7 @@ function Cart() {
                                   <h4>{item.price}</h4>
                                 </div>
                                 <div><input type="number" min="1"/></div>
-                                <div></div>
+                                <div></div> 
                             </div> 
                         </div>
         )

@@ -147,90 +147,83 @@ const Datas = {
         price: 2001,
         image: "https://m.media-amazon.com/images/I/61q6x-ll5FL._SY355_.jpg"
       }
+  ],
+  tv:[
+    {
+        id: 1,
+        name: "Telcom",
+        price: 17999,
+        image: "https://m.media-amazon.com/images/I/71d5fMDvq9L._SY355_.jpg",
+      },
+      {
+        id: 2,
+        name: "Lenovo",
+        price: 9999,
+        image: "https://m.media-amazon.com/images/I/71JiILhQtwL._SL1500_.jpg"
+      },
+      {
+        id: 3,
+        name: "Super",
+        price: 14000,
+        image: "https://m.media-amazon.com/images/I/81iLglMLueL._SY355_.jpg"
+      },
+      {
+        id: 4,
+        name: "Sony Ultra",
+        price: 20000,
+        image: "https://m.media-amazon.com/images/I/71IBre-QupL._SY355_.jpg"
+      },
+      {
+        id: 5,
+        name: "Realme",
+        price: 13000,
+        image: "https://m.media-amazon.com/images/I/71arAQvySlL._SY355_.jpg"
+      },
+      {
+        id: 6,
+        name: "Samsung",
+        price: 15000,
+        image: "https://m.media-amazon.com/images/I/714J5Up9PVL._SY355_.jpg"
+      },
+      {
+        id: 7,
+        name: "Onida",
+        price: 18000,
+        image: "https://m.media-amazon.com/images/I/71KCvhgZt0L._SY355_.jpg"
+      },
+      {
+        id: 8,
+        name: "Redmi",
+        price: 10000,
+        image: "https://m.media-amazon.com/images/I/71eBbiHaWLL._SY355_.jpg"
+      },
+      {
+        id: 9,
+        name:"Bpl",
+        price: 6000,
+        image: "https://m.media-amazon.com/images/I/61Beg7YXfSL._SY355_.jpg"
+      },
+      {
+        id: 10,
+        name: "Hyndai",
+        price: 12000,
+        image: "https://m.media-amazon.com/images/I/41aLhSUrn5L._SY355_.jpg"
+      },
+      {
+        id: 11,
+        name: "Sony",
+        price: 25000,
+        image: "https://www.lg.com/in/images/tvs/md07554802/thumbnail/55UQ8020PSB-350-2.jpg"
+      },
+      {
+        id: 12,
+        name: "Micromax",
+        price: 20000,
+        image: "https://m.media-amazon.com/images/I/71pOO9o2PxL._SX425_.jpg"
+      },
   ]
-  // tv:[
-  //   {
-  //       id: 1,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71d5fMDvq9L._SY355_.jpg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71JiILhQtwL._SL1500_.jpg"
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/81iLglMLueL._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71IBre-QupL._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 5,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71arAQvySlL._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 6,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/714J5Up9PVL._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 7,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71KCvhgZt0L._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 8,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71eBbiHaWLL._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 9,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/61Beg7YXfSL._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 10,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/41aLhSUrn5L._SY355_.jpg"
-  //     },
-  //     {
-  //       id: 11,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://www.lg.com/in/images/tvs/md07554802/thumbnail/55UQ8020PSB-350-2.jpg"
-  //     },
-  //     {
-  //       id: 12,
-  //       name: "redm",
-  //       price: 2001,
-  //       image: "https://m.media-amazon.com/images/I/71pOO9o2PxL._SX425_.jpg"
-  //     },
-  // ]
 
   
 };
-
-// const mobiles=[
-//         ,
-//             {
-//
-//                 },
-//     ]
 
 export default Datas;

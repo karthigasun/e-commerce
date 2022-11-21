@@ -1,5 +1,5 @@
 import React from 'react'
-import Lap from '../Back/Lap/Lap'
+// import Lap from '../Back/Lap/Lap'
 import Mobile from '../Back/Mobiles/Mobile'
 import Tv from '../Back/Tv/Tv'
 
@@ -8,7 +8,7 @@ function All() {
     <>
         <Mobile/>
         {/* <Lap/> */}
-        {/* <Tv/> */}
+        <Tv/>
     </>
   )
 }

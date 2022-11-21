@@ -1,7 +1,15 @@
 import React from 'react';
 import Datas from '../../Data/Data';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { update } from '../../Redux/Action';
 function Tv() {
+  const state=useSelector((state)=>state);
+const dispatch=useDispatch()
+console.log(state);
+
+const addCart=(item)=>{
+    dispatch(update(item))
+}
   return (
     <>
     <div id='section'>
@@ -16,7 +24,7 @@ function Tv() {
                     <div className='card-body'>
                       <h4 className='card-title'>Name:{tv1.name}</h4>
                       <h5 className='card-text'>Price Rs:{tv1.price}</h5>
-                      <button>Add to Cart</button>
+                      <button onClick={()=>addCart(tv1)}>Add to Cart</button>
                     </div>
                   </div>
                 </div>
