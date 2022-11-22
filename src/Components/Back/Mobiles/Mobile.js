@@ -1,9 +1,8 @@
 import React from 'react'
 import Datas from '../../Data/Data';
-// import{useState} from 'react'
-// import Cart from '../../Front/Cart/Cart';
 import { useDispatch, useSelector } from 'react-redux';
 import { update } from '../../Redux/Action';
+import "../../../Components/Style.css"
 function Mobile() {
 const state=useSelector((state)=>state);
 const dispatch=useDispatch()
@@ -22,9 +21,9 @@ const addCart=(item)=>{
                 Datas.laptops.map((laptop)=>{
                     return (
                         <div className='col-md-6 col-lg-4' key={laptop.id}>
-                            <div className='card text-center mb-5'>
+                            <div className='card text-center mb-5 card-cir'>
                                 <img src={laptop.image} alt={laptop.name} className='img-fluid'/>
-                                <div className='card-body'>
+                                <div className='card-body card-item'>
                                     <h4 className='card-title'>Name:{laptop.name}</h4>
                                     <h5 className='card-text'>Price Rs:{laptop.price}</h5>
                                     <button onClick={()=>addCart(laptop)}>Add to Cart</button>

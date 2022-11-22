@@ -1,7 +1,7 @@
 import React from 'react'
 import Datas from '../../Data/Data';
 import './Lap.css'
-
+import "../../../Components/Style.css"
 function Lap() {
   return (
     <>
@@ -12,7 +12,7 @@ function Lap() {
                 Datas.mobiles.map((mobile)=>{
                     return (
                         <div className='col-md-6 col-lg-4' key={mobile.id}>
-                            <div className='card text-center mb-5 color'>
+                            <div className='card text-center mb-5 color card-cir'>
                                 <img src={mobile.image} alt={mobile.name} className='img-fluid'/>
                                 <div className='card-body'>
                                     <h4 className='card-title'>Name:{mobile.name}</h4>

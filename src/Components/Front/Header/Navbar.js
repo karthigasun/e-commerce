@@ -16,11 +16,11 @@ function Navbar() {
     // const {totalcount}=useSelector((state)=>state.cart)
   return (
     <>
-        <div className='section'>
+        <div className='section fixed-top'>
             <div className='container'>
                 <nav className='navbar'>
                         <h1>
-                            <Link to='/' className='navbar-brand logo' onClick={closeSide}>Shopping</Link>
+                            <Link to='/' className='navbar-brand logo' onClick={closeSide}>Shopping<span>Cart</span></Link>
                         </h1>
                         
                         <div className='na-icon' onClick={iconHandler}>

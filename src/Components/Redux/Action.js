@@ -4,3 +4,9 @@ export const update=(payload)=>{
         payload:payload
     }
 }
+export const incerment=(payload)=>{
+    return{
+        type:"increase",
+        payload:payload
+    }
+}

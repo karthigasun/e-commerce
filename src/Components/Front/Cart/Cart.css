@@ -1,0 +1,13 @@
+.card-items{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mar{
+    margin-top: 75px;
+}
+.tab-img{
+    width: 150px;
+    height: 150px;
+}

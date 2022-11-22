@@ -1,29 +1,53 @@
 import React from "react";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
+import "./Cart.css";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 function Cart() {
-  const state=useSelector((state)=>state);
+  const state = useSelector((state) => state);
   return (
     <>
-    <div className="section">
-      <div className="container">
-        <div className="row">
-      {state.user.map((item)=>{
-        return(
-            <div className='col-12' key={item.id}>
-                            <div className='single-item d-flex justify-content-between'>
-                                <div>
-                                  <img src={item.image} className="img-fluid" alt={item.name}/>
-                                  <h4>{item.name}</h4>
-                                  <h4>{item.price}</h4>
-                                </div>
-                                <div><input type="number" min="1"/></div>
-                                <div></div> 
-                            </div> 
-                        </div>
-        )
-      })}
-    </div>
+      <div className="section mar">
+        <div className="container">
+          <div className="row">
+            <table>
+              <tr>
+                <th>
+                  <h4>Product Image</h4>
+                </th>
+                <th>
+                  <h4>Product Name</h4>
+                </th>
+                <th>
+                  <h4>Qty</h4>
+                </th>
+                <th>
+                  <h4>Total Price</h4>
+                </th>
+              </tr>
+              {state.user.map((item) => {
+                return (
+                  // <div>
+                  <tr>
+                    <td>
+                      <img src={item.image} alt={item.name} className="tab-img"/>
+                    </td>
+                    <td>
+                      {item.name}
+                    </td>
+                    <td>
+                      <button><FaMinus></FaMinus></button>
+                      <input type="number" />
+                      <button><FaPlus></FaPlus></button>
+                    </td>
+                    <td>
+                      <h3>Total</h3>
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+        </div>
         </div>
       </div>
     </>
