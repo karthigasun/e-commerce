@@ -5,10 +5,17 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 function Cart() {
   const state = useSelector((state) => state);
+
+  const decrement=()=>{
+
+  }
+  const increment=()=>{
+    
+  }
   return (
     <>
       <div className="section mar">
-        <div className="container">
+        <div className="container"> 
           <div className="row">
             <table>
               <tr>
@@ -36,9 +43,9 @@ function Cart() {
                       {item.name}
                     </td>
                     <td>
-                      <button><FaMinus></FaMinus></button>
+                      <button onClick={()=>decrement}><FaMinus></FaMinus></button>
                       <input type="number" />
-                      <button><FaPlus></FaPlus></button>
+                      <button onClick={()=>increment}><FaPlus></FaPlus></button>
                     </td>
                     <td>
                       <h3>Total</h3>

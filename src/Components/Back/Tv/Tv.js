@@ -14,7 +14,7 @@ const addCart=(item)=>{
   return (
     <>
     <div id='section'>
-      <div className='container  py-4'>
+      <div className='container product  py-4'>
         <div className='row'>
           {
             Datas.tv.map((tv1)=>{

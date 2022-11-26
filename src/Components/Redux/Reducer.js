@@ -8,8 +8,14 @@ export const stateReducer=(state=initialState,action)=>{
         ...state,
         user:[...state.user,action.payload],
       };
+      // case "removeFromCart":
+      //   return{
+
+      //   }
 
       default:
         return state;
-  }
+  };
+  
 }
+

@@ -1,8 +1,18 @@
 import React from 'react'
 import Datas from '../../Data/Data';
+import { useSelector,useDispatch } from 'react-redux';
+import { update } from '../../Redux/Action';
 import './Lap.css'
 import "../../../Components/Style.css"
 function Lap() {
+    const state=useSelector((state)=>state);
+    const dispatch=useDispatch()
+    console.log(state);
+    
+    const addCart=(item)=>{
+        dispatch(update(item))
+    }
+
   return (
     <>
     <div id='section'>
@@ -17,7 +27,7 @@ function Lap() {
                                 <div className='card-body'>
                                     <h4 className='card-title'>Name:{mobile.name}</h4>
                                     <h5 className='card-text'>Price Rs:{mobile.price}</h5>
-                                    <button>Add to Cart</button>
+                                    <button onClick={()=>addCart(mobile)}>Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -32,4 +42,4 @@ function Lap() {
   )
 }
 
-export default Lap
+export default Lap;
