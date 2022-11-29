@@ -25,6 +25,7 @@ const addCart=(item)=>{
                     <div className='card-body card-item'>
                       <h4 className='card-title'>Name:{tv1.name}</h4>
                       <h5 className='card-text'>Price Rs:{tv1.price}</h5>
+                      <h5>{tv1.count}</h5>
                       <button onClick={()=>addCart(tv1)}>Add to Cart</button>
                     </div>
                   </div>

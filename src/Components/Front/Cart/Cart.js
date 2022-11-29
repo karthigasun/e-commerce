@@ -6,8 +6,10 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 function Cart() {
   const state = useSelector((state) => state);
 
-  const decrement=()=>{
-
+  const decrement=(count)=>{
+    console.log(count);
+    count = count-1
+    
   }
   const increment=()=>{
     
@@ -35,7 +37,7 @@ function Cart() {
               {state.user.map((item) => {
                 return (
                   // <div>
-                  <tr>
+                  <tr key={item.id}>
                     <td>
                       <img src={item.image} alt={item.name} className="tab-img"/>
                     </td>
@@ -43,9 +45,10 @@ function Cart() {
                       {item.name}
                     </td>
                     <td>
-                      <button onClick={()=>decrement}><FaMinus></FaMinus></button>
-                      <input type="number" />
-                      <button onClick={()=>increment}><FaPlus></FaPlus></button>
+                      <button onClick={()=>decrement(item)}><FaMinus></FaMinus></button>
+                      {/* <input type="number" /> */}
+                      <span>{item.count}</span>
+                      <button onClick={()=>increment()}><FaPlus></FaPlus></button>
                     </td>
                     <td>
                       <h3>Total</h3>

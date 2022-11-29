@@ -37,7 +37,7 @@
         text-align: center;
         border-radius: 20px;
         z-index:1;
-        transition: 3s;
+        transition: 1s;
     }
     .navi-menu.active{
         left: 0;
